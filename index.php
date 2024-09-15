@@ -109,7 +109,7 @@
     <strong> <a href="https://1sourcecodr.blogspot.com/">link</a>.</strong>
     
     <div class="float-right d-none d-sm-inline-block">
-      <b>Online Document Sharing System</b>
+      <b>DocShare</b>
     </div>
   </footer>
 </div>
