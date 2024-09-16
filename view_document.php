@@ -38,6 +38,9 @@ foreach($qry as $k => $v){
 							<dd><?php echo html_entity_decode($description) ?></dd>
 						</dl>
 					</div>
+
+
+
 				</div>
 			</div>
 		</div>
@@ -66,6 +69,48 @@ foreach($qry as $k => $v){
 			                      <span class="text-dark"><?php echo $dname[1] ?></span>
 			                    </a>
 							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-12">
+				<div class="card card-outline card-primary">
+					<div class="card-header">
+						<h6><b>Your Feedback</b></h6>
+					</div>
+					<div class="card-body">
+						<div class="col-md-12">
+						  <div class="callout callout-info">
+						<dl>
+							<dt>Comments</dt>
+						</dl>
+       								<form id="comment-form" action="/add-comment" method="post">
+           						<dl>	
+								<textarea name="comment_text" placeholder="Leave a comment..."></textarea>
+								</dl>
+           								<button type="submit">Submit</button>
+								
+       								</form>
+							</div>
+
+
+
+
+					<div class="callout callout-info">
+						<dl>
+							<dt>Rate Document</dt>
+				</dl>
+						   <div class="rating">
+								
+   							    <span class="star" data-value="5">★</span>
+       							    <span class="star" data-value="4">★</span>
+       							    <span class="star" data-value="3">★</span>
+       							    <span class="star" data-value="2">★</span>
+       							    <span class="star" data-value="1">★</span>
+   							</div>
+						</div>
+					</div>
+				</div>
 							 <?php endif; ?>
 					         <?php endforeach; ?>
 					         <?php endif; ?>
