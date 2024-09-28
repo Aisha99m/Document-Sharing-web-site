@@ -4,7 +4,7 @@
 <?php 
 	if(!isset($_SESSION['login_id']))
 	    header('location:login.php');
-	include 'header.php' 
+	include 'head.php' 
 ?>
 <body class="hold-transition sidebar-mini layout-fixed layout-navbar-fixed layout-footer-fixed">
 <div class="wrapper">
@@ -37,7 +37,9 @@
       <div class="container-fluid">
          <?php 
           $page = isset($_GET['page']) ? $_GET['page'] : 'home';
+		
           include $page.'.php';
+	
           ?>
       </div><!--/. container-fluid -->
     </section>

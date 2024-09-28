@@ -40,7 +40,7 @@
 					<?php
 					$i = 1;
 					$where = '';
-					if($_SESSION['login_type'] == 1 ):
+					if($_SESSION['login_type'] != 0 ):
 					$user = $conn->query("SELECT * FROM users where id in (SELECT user_id FROM documents) ");
 					while($row = $user->fetch_assoc()){
 						$uname[$row['id']] = ucwords($row['lastname'].', '.$row['firstname'].' '.$row['middlename']);

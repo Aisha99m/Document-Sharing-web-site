@@ -54,12 +54,15 @@
             </ul>
           </li>
           <li class="nav-item">
-	   <a href="#" class="nav-link nav-is-tree nav-edit_document nav-view_document">
-             <i class="nav-icon fa fa-folder-open"></i>
+            <a href="#" class="nav-link nav-is-tree nav-edit_document nav-view_document">
+              <i class="nav-icon fa fa-folder-open"></i>
               <p>
-
-                  Documents </p>
+                
                 <i class="right fas fa-angle-left"></i>
+			<a href="./index.php?page=document_list" class="nav-link nav-document_list tree-item">
+                  <i class="fas fa-angle-right nav-icon"></i>
+                  Documents
+              
             </a>
             <ul class="nav nav-treeview">
               <li class="nav-item">

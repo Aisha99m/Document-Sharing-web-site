@@ -38,9 +38,6 @@ foreach($qry as $k => $v){
 							<dd><?php echo html_entity_decode($description) ?></dd>
 						</dl>
 					</div>
-
-
-
 				</div>
 			</div>
 		</div>
@@ -84,7 +81,7 @@ foreach($qry as $k => $v){
 						<dl>
 							<dt>Comments</dt>
 						</dl>
-       								<form id="comment-form" action="/add-comment" method="post">
+       								<form id="comment-form" action="addcommentindex1.php?page=add-comment&id=<?php echo md5($row['id']) ?>" method="post">
            						<dl>	
 								<textarea name="comment_text" placeholder="Leave a comment..."></textarea>
 								</dl>
@@ -101,7 +98,6 @@ foreach($qry as $k => $v){
 							<dt>Rate Document</dt>
 				</dl>
 						   <div class="rating">
-								
    							    <span class="star" data-value="5">★</span>
        							    <span class="star" data-value="4">★</span>
        							    <span class="star" data-value="3">★</span>
