@@ -18,6 +18,13 @@ if($action == 'save_user'){
 	if($save)
 		echo $save;
 }
+
+if($action == 'signup'){
+	$signup = $crud->signup();
+	if($signup)
+		echo $signup;
+}
+
 if($action == 'update_user'){
 	$save = $crud->update_user();
 	if($save)

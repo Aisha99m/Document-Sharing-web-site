@@ -1,3 +1,12 @@
+<?php
+session_start();
+// Check if user is logged in
+if (isset($_SESSION['login_id'])) {
+    header('Location: index.php'); // Redirect to the main page if logged in
+    exit();
+}
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -15,7 +24,7 @@
                 <li><a href="#features">Features</a></li>
                 <li><a href="#about">About Us</a></li>
                 <li><a href="login.php">Login</a></li>
-                <li><a href="signup.html" class="btn-signup">Sign Up</a></li>
+                <li><a href="signup.php" class="btn-signup">Sign Up</a></li>
             </ul>
         </nav>
     </header>
@@ -25,7 +34,7 @@
         <div class="hero-content">
             <h1>Share & Collaborate Securely</h1>
             <p>Upload, rate, and comment on documents with ease. Keep your files organized and accessible from anywhere.</p>
-            <a href="index.php" class="btn-cta">Get Started</a>
+            <a href="login.php" class="btn-cta">Get Started</a>
         </div>
     </section>
     <!-- Features Section -->
